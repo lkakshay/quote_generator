@@ -11,7 +11,6 @@ export const Quote = ({ data }) => {
     setStatus(false);
   };
 
-  console.log("data", data);
   return (
     <div className="quote">
       <div className="quote-content">{data?.content}</div>

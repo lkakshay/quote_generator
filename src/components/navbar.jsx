@@ -7,7 +7,7 @@ export const Navbar = () => {
       <div onClick={() => navigate("/")} className="nav-home">
         Home
       </div>
-      <div onClick={() => navigate("/bookmark")} className="nav-bookmark">
+      <div onClick={() => navigate("/bookmarks")} className="nav-bookmark">
         Bookmarks
       </div>
     </div>

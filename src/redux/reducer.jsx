@@ -2,9 +2,8 @@ import * as types from './actionTypes'
 
 const initialState = {
   
-  saved_quotes: [],
+  randomQuotes: [],
   isLoading: false,
-  isError: false,
 };
 
 export const reducer = (state = initialState,action) => {
@@ -13,29 +12,26 @@ export const reducer = (state = initialState,action) => {
  
   
   switch(type){
-    case types.GET_SAVED_QUOTES_REQUEST:{
+    case types.GET_RANDOM_QUOTES_REQUEST:{
       return{
         ...state,isLoading:true,
-        isError:false
       }
 
     }
 
-    case types.GET_SAVED_QUOTES_SUCCESS:{
+    case types.GET_RANDOM_QUOTES_SUCCESS:{
       return{
-        ...state,saved_quotes:payload,
+        ...state,randomQuotes:payload,
         isLoading:false,
-        isError:false
       }
 
     }
-    case types.GET_SAVED_QUOTES_FAILURE:{
+    case types.GET_RANDOM_QUOTES_FAILURE:{
       return{
-        ...state,isLoading:false,
-        isError:true
-      }
+        ...state,isLoading:false,      }
 
     }
+   
    
     default:
      return state;
