@@ -14,7 +14,6 @@ export const Home = () => {
     axios
       .get("https://api.quotable.io/tags")
       .then((res) => {
-        console.log("res", res);
         setTags(res.data);
       })
       .catch((err) => console.log(err));

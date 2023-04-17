@@ -1,7 +1,7 @@
 
 .App{
   background-color: #37238d;
-  min-height: 1vh;
+  min-height: 100vh;
 }
 .navbar{
   display: flex;
