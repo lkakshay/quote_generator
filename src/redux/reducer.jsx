@@ -37,6 +37,12 @@ export const reducer = (state = initialState,action) => {
         ...state,bookmark:[...state.bookmark,payload] }
 
     }
+    case types.UNBOOKMARK:{
+      return{
+        ...state,bookmark:[...state.bookmark.filter(item=>item._id!==payload._id)] }
+
+    }
+   
    
    
     default:

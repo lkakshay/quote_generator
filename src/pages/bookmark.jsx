@@ -7,7 +7,7 @@ export const Bookmark=()=>{
     console.log('data',data);
     return(
         <div className="bookmark">
-          {  data?.map((e)=><Quote key={e._id} data={e}/>)}
+          {  data?.map((e)=><Quote book={true} key={e._id} data={e}/>)}
         </div>
     )
 
