@@ -1,5 +1,4 @@
 
-import { useSelector } from 'react-redux';
 import './App.css';
 import { Navbar } from './components/navbar';
 import MainRoutes from './route/mainRoute';

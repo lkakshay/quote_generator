@@ -51,3 +51,12 @@
   border-radius: 5px;
   padding: 10px 20px;
 }
+
+.bookmark{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 20px;
+}

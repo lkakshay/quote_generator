@@ -4,6 +4,7 @@ const initialState = {
   
   randomQuotes: [],
   isLoading: false,
+  bookmark:[]
 };
 
 export const reducer = (state = initialState,action) => {
@@ -29,6 +30,11 @@ export const reducer = (state = initialState,action) => {
     case types.GET_RANDOM_QUOTES_FAILURE:{
       return{
         ...state,isLoading:false,      }
+
+    }
+    case types.BOOKMARK:{
+      return{
+        ...state,bookmark:[...state.bookmark,payload] }
 
     }
    

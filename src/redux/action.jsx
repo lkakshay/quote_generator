@@ -13,3 +13,5 @@ export const getQuote =(searchTag)=>(dispatch)=>{
       .catch((err) => dispatch({type:types.GET_RANDOM_QUOTES_FAILURE}))
 
   };
+
+  
