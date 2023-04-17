@@ -16,3 +16,16 @@
   margin: 30px;
   
 }
+.quote{
+  width: 500px;
+  text-align: center;
+}
+
+
+.quote-content{
+  margin-bottom: 30px;
+}
+.quote-others{
+  display: flex;
+  justify-content: space-evenly;
+}
