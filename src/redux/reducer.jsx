@@ -1,10 +1,11 @@
+import { getLoacalData } from '../helpers/localstorage';
 import * as types from './actionTypes'
 
 const initialState = {
   
   randomQuotes: [],
   isLoading: false,
-  bookmark:[]
+  bookmark:getLoacalData()
 };
 
 export const reducer = (state = initialState,action) => {

@@ -2,18 +2,18 @@ import { useEffect, useState } from "react";
 import { BsBookmarkPlus } from "react-icons/bs";
 import { BsFillBookmarkFill } from "react-icons/bs";
 import { useDispatch } from "react-redux";
+import { bookMarkItem, unBookMarkItem } from "../redux/action";
 
 export const Quote = ({ data ,book}) => {
   const [status, setStatus] = useState(false);
   const dispatch=useDispatch()
   const bookMark = () => {
     setStatus(true);
-    dispatch({type:'BOOKMARK',payload:data})
-
+    dispatch( bookMarkItem(data))
   };
   const unBookMark = () => {
     setStatus(false);
-    dispatch({type:'UNBOOKMARK',payload:data})
+    dispatch(unBookMarkItem(data))
   };
 
   useEffect(()=>{
